@@ -1,35 +1,23 @@
 
-var red = document.getElementById("red")
-var orange = document.getElementById("orange")
-var green = document.getElementById("green")
+const circles= document.querySelectorAll('.circle');
 
+let activateLight =0;
 
-let i = 0;
+setInterval(changeLight, 2000);
 
+function changeLight(){
+    circles[activateLight].className = 'circle'
+    activateLight++;
 
+    if(activateLight>2){
+        activateLight =0;
+    }
 
-function change (){
-    let colors = ["red","white"]
-    
-    red.style.backgroundColor = colors[i];
-    i = (i + 1) % colors.length;
-}
+    const curentLight = circles[activateLight];
 
-function change2 (){
-    let colors = ["orange","white"]
-    
-    orange.style.backgroundColor = colors[i];
-    i = (i + 1) % colors.length;
-}
-
-function change3 (){
-    let colors = ["green","white"]
-    
-    green.style.backgroundColor = colors[i];
-    i = (i + 1) % colors.length;
+    curentLight.classList.add(curentLight.getAttribute('color'))
 }
 
 
-setInterval(change, 2000);
-setInterval(change2, 2000);
-setInterval(change3, 2000);
+
+

@@ -17,6 +17,13 @@ h1{
 
 }
 
+.ghost{
+    background-color: brown;
+    width:800px; 
+    margin:0 auto;
+    padding-top: 30%;
+}
+
 #number {
     height: 25px;
     width: 250px;
