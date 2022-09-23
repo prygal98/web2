@@ -1,0 +1,27 @@
+body { 
+    display: flex;
+    flex-direction: column;
+    background-image : url(../img/backround.jpg);
+    background-size : cover;
+    
+}
+
+header {
+   background-color: rgb(195, 72, 72);
+
+}
+
+.title{
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color:rgb(195, 72, 72) ;
+}
